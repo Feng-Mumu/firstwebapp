@@ -1,0 +1,25 @@
+{
+  "name": "firstwebapp",
+  "version": "1.0.0",
+  "description": "vue项目,Vue旅游网项目",
+  "main": "index.js",
+  "dependencies": {
+    "formidable": "^2.0.1",
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feng-Mumu/firstwebapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feng-Mumu/firstwebapp/issues"
+  },
+  "homepage": "https://github.com/Feng-Mumu/firstwebapp#readme"
+}
