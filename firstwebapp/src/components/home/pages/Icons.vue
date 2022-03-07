@@ -6,8 +6,8 @@
                 v-for='icon in item '
                 :key='icon.id'
                 >
-                <img :src="icon.imgSrc">
-                <p>{{icon.info}}</p>
+                <img :src="icon.imgUrl">
+                <p>{{icon.title}}</p>
             </div>
         </swiper-slide>
     </swiper> 
@@ -28,55 +28,55 @@ export default{
             swiperOption:{},
             iconsList: [
                 {
-                id: "01",
-                imgSrc: "https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                info: "民宿客栈"
-                },
-                {
-                id: "02",
-                imgSrc: "https://picbed.qunarzz.com/83af731055e121a3251690b225327b56.png",
-                info: "专车自驾"
-                },         
-                {
-                id: "03",
-                imgSrc: "https://picbed.qunarzz.com/5b6737be49ca243072ca614f07803b83.png",
-                info: "赚钱-信用卡"
-                },
-                {
-                id: "04",
-                imgSrc: "https://picbed.qunarzz.com/1e107321f5396ea4994cd832232ecf8a.png",
-                info: "旅游团购"
-                },
-                {
-                id: "05",
-                imgSrc: "https://picbed.qunarzz.com/c65b3bb7571a6bd62df669213e44b84d.png",
-                info: "一日游"
-                },
-                {
-                id: "06",
-                imgSrc: "https://picbed.qunarzz.com/f6bb08a239ce1b038204120a8d1e4669.png",
-                info: " 特惠酒店"
-                },
-                {
-                id: "07",
-                imgSrc: "https://picbed.qunarzz.com/3a08f360e958ccb2b947049387873ace.png",
-                info: "借钱"
-                },
-                {
-                id: "08",
-                imgSrc: "https://picbed.qunarzz.com/19b4f6d2fabd617789fa5aad65b249da.png",
-                info: "白金卡"
-                },
-                {
-                id: "09",
-                imgSrc: "https://img1.qunarzz.com/order/comp/2007/23/734c3c62d2adce02.png",
-                info: "行程设计"
-                },
-                {
-                id: "10",
-                imgSrc: "https://picbed.qunarzz.com/25e3b9f17a21a6e0113c57a23ffccde4.png",
-                info: "周边短途"
-                }
+					id:"01",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+					title:"景点门票"
+				},
+				{
+					id:"02",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+					title:"必游榜单"
+				},
+				{
+					id:"03",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1803/6a/45f595250c73d102.png",
+					title:"夏日玩水"
+				},
+				{
+					id:"04",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+					title:"主题乐园"
+				},
+				{
+					id:"05",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+					title:"动植物园"
+				},
+				{
+					id:"06",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1805/57/1e29afd06f881102.png",
+					title:"普陀山"
+				},
+				{
+					id:"07",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+					title:"一日游"
+				},
+				{
+					id:"08",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png",
+					title:"公园"
+				},
+				{
+					id:"09",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+					title:"游乐场"
+				},
+				{
+					id:"10",
+					imgUrl:"http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+					title:"全部玩乐"
+				}
             ],
         }
     },
