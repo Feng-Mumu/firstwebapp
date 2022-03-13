@@ -17,6 +17,9 @@ import 'swiper/css/swiper.css'
 
 Vue.use(VueAwesomeSwiper)
 
+//axios
+import axios from 'axios'
+Vue.prototype.$http = axios
 
 //css
 import 'css/reset.css'

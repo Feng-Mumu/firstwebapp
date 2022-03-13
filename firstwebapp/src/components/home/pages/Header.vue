@@ -12,9 +12,11 @@
             输入城市/景点/游玩主题
         </div>
         <div class="header-right">
-            北京<span class="iconfont">
-                &#xe600;
-            </span>
+            <router-link to="/city">
+                北京<span class="iconfont">
+                    &#xe600;
+                </span>
+            </router-link>
         </div>
     </div>
 </template>
@@ -52,6 +54,14 @@
 .header-right{
     font-size: .28rem;
     padding: 0 .2rem;
-
 }
+
+.header-right a{
+	color:#fff;
+}
+
+
+
+
+
 </style>

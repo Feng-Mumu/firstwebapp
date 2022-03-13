@@ -11,18 +11,9 @@
 
 <script type="text/javascript">
 export default{
+    props:['swiperList'],
     data() {
       return {
-        swiperList:[
-            {
-                id:"01",
-                imgUrl:require("@/assets/img/swiper1.jpeg")
-            },
-            {
-                id:"02",
-                imgUrl:require("@/assets/img/swiper2.jpeg")
-            }
-        ],
         swiperOptions: {
           pagination: {
             el: '.swiper-pagination'
@@ -40,7 +31,7 @@ export default{
     height: 2.8rem; */
     background: #ccc;
     height: 0;
-    padding-bottom: 30.47%;
+    padding-bottom: 26.66%;
 }
 .header-swiper img{
     width:100%;
