@@ -44,7 +44,7 @@ export default {
         }
     },
     mounted(){
-        this.$http.get("/api/dataHome.jason")
+        this.$http.get("/api/dataHome.json")
         .then((res)=>{
             const data = res.data.data[0];
             this.swiperList = data.swiperList;
