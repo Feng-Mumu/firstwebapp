@@ -10,6 +10,7 @@
                     <li class="hot-item"
                     v-for ='item in hotCities' 
                     :key = 'item.id'
+                    @click="changeCityName(item.name)"
                     >
                         {{item.name}}
                     </li>
@@ -44,6 +45,7 @@
                         <li class="list-item"
                         v-for="item in val"
                         :key = "item.id"
+                        @click='changeCityName(item.name)'
                         >
                             {{item.name}}
                         </li>
@@ -57,6 +59,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+import { mapMutations } from 'vuex'
 export default {
 	props:['hotCities','cities'],
 	data () {
@@ -73,7 +76,12 @@ export default {
         changeSort(sortName){
         // console.log(this.$refs[sortName][0])
         this.scroll.scrollToElement(this.$refs[sortName][0])
-    }
+        },
+        changeCityName(cityName){
+            this.changeCity(cityName);
+            this.$router.push('/')
+        },
+        ...mapMutations(['changeCity'])
     }
     
 }
@@ -119,6 +127,7 @@ export default {
 }
 
 .hot-item{
+    position relative;
     height: .9rem;
     text-align: center;
     line-height: .9rem;
@@ -181,6 +190,7 @@ export default {
 }
 
 .list-item{
+    position relative;
     width:25%;
     font-size: .28rem;
     text-align: center;

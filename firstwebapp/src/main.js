@@ -21,6 +21,9 @@ Vue.use(VueAwesomeSwiper)
 import axios from 'axios'
 Vue.prototype.$http = axios
 
+//vuex
+import store from './store/index.js'
+
 //css
 import 'css/reset.css'
 import 'css/iconfont.css'
@@ -29,6 +32,7 @@ import 'css/iconfont.css'
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

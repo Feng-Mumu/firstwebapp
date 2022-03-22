@@ -13,14 +13,24 @@
         </div>
         <div class="header-right">
             <router-link to="/city">
-                北京<span class="iconfont">
+                {{city}}<span class="iconfont">
                     &#xe600;
                 </span>
             </router-link>
         </div>
     </div>
 </template>
-<script></script>
+
+
+<script>
+import { mapState } from "vuex"
+export default {
+  computed: {
+    ...mapState(["city"])
+  }
+}
+
+</script>
 
 <style scoped lang="stylus">
 @import '~css/var.tyle'
@@ -59,9 +69,6 @@
 .header-right a{
 	color:#fff;
 }
-
-
-
 
 
 </style>
