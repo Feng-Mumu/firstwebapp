@@ -24,6 +24,7 @@
                 <ul class="sort-list">
                     <li class="sort-item"
                     v-for="(val,key) in cities"
+                    @click="changeSort(key)"
                     >
                     {{key}}
                     </li>
@@ -34,6 +35,7 @@
             <div class="list">
                 <div
                 v-for ='(val,key) in cities'
+                :ref = 'key'
                 >
                     <div class="list-title">
                     {{key}}
@@ -67,6 +69,13 @@ export default {
 		let container = this.$refs['container'];
 		this.scroll = new BScroll(container)
 	},
+    methods:{
+        changeSort(sortName){
+        // console.log(this.$refs[sortName][0])
+        this.scroll.scrollToElement(this.$refs[sortName][0])
+    }
+    }
+    
 }
 
 </script>
