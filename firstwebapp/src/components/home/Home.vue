@@ -39,6 +39,7 @@ export default {
             hotList:[],
             likeList:[],
             vacationList:[],
+            changeCity:''
         }
     },
     computed:{
@@ -51,7 +52,6 @@ export default {
                 const data = res.data.data;
                 data.forEach((item,index)=>{
                     if (item.city == this.city){
-                        console.log(item.city,this.city);
                         this.swiperList = item.swiperList;
                         this.iconsList = item.iconsList;
                         this.hotList = item.hotList;
